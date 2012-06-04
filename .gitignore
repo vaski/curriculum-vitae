@@ -5,12 +5,12 @@
 #   git config --global core.excludesfile ~/.gitignore_global
 
 # Ignore image
-/.png
+/*.png
 
 # Ignore generated pdf 
-/.pdf
+/*.pdf
 
 # Ignore logfiles and tempfiles.
-/.log
-/.out
-/.aux
+/*.log
+/*.out
+/*.aux
