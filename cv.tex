@@ -6,7 +6,7 @@
 % available at http://www.latex-project.org/lppl/.
 
 
-\documentclass[11pt,a4paper]{moderncv}
+\documentclass[9pt,a4paper]{moderncv}
 
 % moderncv themes
 \moderncvtheme[green]{casual}   % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
@@ -16,7 +16,7 @@
 \usepackage[utf8]{inputenc}                   % replace by the encoding you are using
 
 % adjust the page margins
-\usepackage[scale=0.8]{geometry}
+\usepackage[scale=0.9]{geometry}
 %\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
 %\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
 \AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
@@ -32,8 +32,8 @@
 \email{email: VadimMasakovski@gmail.com}    % optional, remove the line if not wanted
 %\homepage{homepage (optional)}                % optional, remove the line if not wanted
 %\extrainfo{additional information (optional)} % optional, remove the line if not wanted
-\photo[64pt]{photo}                              % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
-\quote{Some quote (optional)}                 % optional, remove the line if not wanted
+\photo[48pt]{photo}                              % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+\quote{When you are young you think money is the most important thing \newline{} in life. When you are old, you know it." – Oscar Wilde.}                 % optional, remove the line if not wanted
 
 % to show numerical labels in the bibliography; only useful if you make citations in your resume
 \makeatletter
@@ -51,80 +51,47 @@
 \begin{document}
 \maketitle
 
+%   Personal Information
+\section{Personal Information}
+\cvline{Father's Name}{Michael}
+\cvline{Date of Birth}{May 9, 1988}
+\cvline{Place of Birth}{Slutsk, Republic of Belarus}
+\cvline{Nationality}{Belorussian}
+\cvline{Marital Status}{Single}
+
+%   Education
 \section{Education}
-\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}  % arguments 3 to 6 can be left empty
-\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
+\cventry{2005 -- 2011}{Belarusian State University,}{Faculty of Radio Physics and Electronics}{}{}{
+    \textbf{Department:} Physical Electronics \newline{}%
+    \textbf{Specialization:} Digital Electronics \newline{}%
+    \textbf{Additional courses:} Theory of Programming, Object-Oriented Programming, Methods of Computer Experiment, Mathematical Modeling, Theory of Information, Database Management Systems \newline{}%
+    \textbf{Qualification:} Physicist-Engineer
+}%
 
-\section{Master thesis}
-\cvline{title}{\emph{Title}}
-\cvline{supervisors}{Supervisors}
-\cvline{description}{\small Short thesis abstract}
-
-\section{Experience}
-\subsection{Vocational}
-\cventry{year--year}{Job title}{Employer}{City}{}{General description no longer than 1--2 lines.\newline{}%
-Detailed achievements:%
-\begin{itemize}%
-\item Achievement 1;
-\item Achievement 2, with sub-achievements:
-  \begin{itemize}%
-  \item Sub-achievement (a);
-  \item Sub-achievement (b), with sub-sub-achievements (don't do this!);
-    \begin{itemize}
-    \item Sub-sub-achievement i;
-    \item Sub-sub-achievement ii;
-    \item Sub-sub-achievement iii;
-    \end{itemize}
-  \item Sub-achievement (c);
-  \end{itemize}
-\item Achievement 3.
-\end{itemize}}
-\cventry{year--year}{Job title}{Employer}{City}{}{Description line 1\newline{}Description line 2}
-\subsection{Miscellaneous}
-\cventry{year--year}{Job title}{Employer}{City}{}{Description}
-
+%   Languages
 \section{Languages}
-\cvlanguage{Language 1}{Skill level}{Comment}
-\cvlanguage{Language 2}{Skill level}{Comment}
-\cvlanguage{Language 3}{Skill level}{Comment}
+\cvlanguage{Russian}{Fluent}{My native language}
+\cvlanguage{English}{Intermediate}{Speaking, reading and writing}
 
+%   Expireance
+\section{Experience}
+%\subsection{Vocational}
+\cventry{2010 -- Present}{Freelancer}{Web Development}{Minsk}{}{}
+%\subsection{Miscellaneous}
+\cventry{2009 -- Present}{Laboratory Assistant}{Institute of Applied Physics Problems of the BSU}{Minsk}{}{I am working on a programme package that model the processes of producing integrated chips}
+
+%   Computer skills
 \section{Computer skills}
-\cvcomputer{category 1}{XXX, YYY, ZZZ}{category 4}{XXX, YYY, ZZZ}
-\cvcomputer{category 2}{XXX, YYY, ZZZ}{category 5}{XXX, YYY, ZZZ}
-\cvcomputer{category 3}{XXX, YYY, ZZZ}{category 6}{XXX, YYY, ZZZ}
+\cvcomputer{OS}{Linux/Unix, MacOS, Windows}{Web}{HTML/XHTML, CSS, JavaScript}
+\cvcomputer{Programming}{Ruby, C++, Python, PHP}{Data Bases}{MySQL, PostgreSQL, SQLite}
+%\cvcomputer{Scientific}{MATLAB, Octave, Mathematica}{Typography}{\TeX{}, \LaTeX{}}
 
-\section{Interests}
-\cvline{hobby 1}{\small Description}
-\cvline{hobby 2}{\small Description}
-\cvline{hobby 3}{\small Description}
+%   Ruby on Rails
+\section{Ruby on Rails}
+\cvline{Have Experiance}{\small RVM, Gems, Bundler, rake, git, github, TDD, RSpec, Cucumber, Test::Unit, Agile Web Development, Nginx, Unicorn, Heroku, REST, Ajax, JSON, bash, Linux command line, Regular Expressions, jQuery, CoffeScript, Haml, sascc/scss, YAML, markdown, vim}
 
-\section{Extra 1}
-\cvlistitem{Item 1}
-\cvlistitem{Item 2}
-\cvlistitem[+]{Item 3}            % optional other symbol
-
-\renewcommand{\listitemsymbol}{-} % change the symbol for lists
-
-\section{Extra 2}
-\cvlistdoubleitem{Item 1}{Item 4}
-\cvlistdoubleitem{Item 2}{Item 5 \cite{book1}}
-\cvlistdoubleitem{Item 3}{}
-
-% Publications from a BibTeX file without multibib\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% for BibTeX numerical labels
-\nocite{*}
-\bibliographystyle{plain}
-\bibliography{publications}       % 'publications' is the name of a BibTeX file
-
-% Publications from a BibTeX file using the multibib package
-%\section{Publications}
-%\nocitebook{book1,book2}
-%\bibliographystylebook{plain}
-%\bibliographybook{publications}   % 'publications' is the name of a BibTeX file
-%\nocitemisc{misc1,misc2,misc3}
-%\bibliographystylemisc{plain}
-%\bibliographymisc{publications}   % 'publications' is the name of a BibTeX file
+%   Updated
+\section{Updated}
+\cvline{Date}{\small June 7, 2012}
 
 \end{document}
-
-
-%% end of file `template_en.tex'.
