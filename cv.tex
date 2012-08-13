@@ -1,39 +1,36 @@
 %% start of file `cv.tex'.
-%% Copyright 2006-2010 Xavier Danaux (xdanaux@gmail.com).
+%% Maintainer: Vadim Masakovski 
 %
-% This work may be distributed and/or modified under the
-% conditions of the LaTeX Project Public License version 1.3c,
-% available at http://www.latex-project.org/lppl/.
+%  https://launchpad.net/moderncv/  
 
-
-\documentclass[9pt,a4paper]{moderncv}
+\documentclass[10pt,a4paper]{moderncv}
 
 % moderncv themes
-\moderncvtheme[green]{casual}   % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
-%\moderncvtheme[green]{classic}                % idem
+\moderncvtheme[green]{casual}  % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[green]{classic}  % idem
 
 % character encoding
-\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+\usepackage[utf8]{inputenc}  % replace by the encoding you are using
 
 % adjust the page margins
 \usepackage[scale=0.9]{geometry}
-%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+\setlength{\hintscolumnwidth}{2.5cm}  % if you want to change the width of the column with the dates
 %\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
-\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+\AtBeginDocument{\recomputelengths}  % required when changes are made to page layout lengths
 
 % personal data
 \firstname{Vadim}
 \familyname{Masakovski}
-\title{Vadim Masakovski}    % optional, remove the line if not wanted
+%\title{Vadim Masakovski}  % optional, remove the line if not wanted
 %\address{street and number}{postcode city}  % optional, remove the line if not wanted
-%\mobile{mobile (optional)}                    % optional, remove the line if not wanted
-\phone{phone: +375298558472}    % optional, remove the line if not wanted
-%\fax{fax (optional)}                          % optional, remove the line if not wanted
-\email{email: VadimMasakovski@gmail.com}    % optional, remove the line if not wanted
-%\homepage{homepage (optional)}                % optional, remove the line if not wanted
-%\extrainfo{additional information (optional)} % optional, remove the line if not wanted
-\photo[48pt]{photo}                              % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
-\quote{When you are young you think money is the most important thing \newline{} in life. When you are old, you know it." – Oscar Wilde.}                 % optional, remove the line if not wanted
+%\mobile{mobile (optional)}  % optional, remove the line if not wanted
+\phone{phone: +375298558472}  % optional, remove the line if not wanted
+%\fax{fax (optional)}  % optional, remove the line if not wanted
+\email{email: VadimMasakovski@gmail.com}  % optional, remove the line if not wanted
+%\homepage{homepage (optional)}  % optional, remove the line if not wanted
+%\extrainfo{additional information (optional)}  % optional, remove the line if not wanted
+\photo[48pt]{photo}  % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+\quote{"When you are young you think money is the most important thing in life. When you are old, you know it." – Oscar Wilde.}  % optional, remove the line if not wanted
 
 % to show numerical labels in the bibliography; only useful if you make citations in your resume
 \makeatletter
@@ -44,14 +41,13 @@
 %\usepackage{multibib}
 %\newcites{book,misc}{{Books},{Others}}
 
-%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
-%----------------------------------------------------------------------------------
-%            content
-%----------------------------------------------------------------------------------
+%\nopagenumbers{}  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+%% CONTENT
+
 \begin{document}
 \maketitle
-
-%   Personal Information
+%  Personal Information 
 \section{Personal Information}
 \cvline{Father's Name}{Michael}
 \cvline{Date of Birth}{May 9, 1988}
@@ -59,39 +55,40 @@
 \cvline{Nationality}{Belorussian}
 \cvline{Marital Status}{Single}
 
-%   Education
+%  Education
 \section{Education}
-\cventry{2005 -- 2011}{Belarusian State University,}{Faculty of Radio Physics and Electronics}{}{}{
+\cventry{2005 -- 2010}{Belarusian State University,}{Faculty of Radio Physics and Electronics}{}{}{
     \textbf{Department:} Physical Electronics \newline{}%
     \textbf{Specialization:} Digital Electronics \newline{}%
     \textbf{Additional courses:} Theory of Programming, Object-Oriented Programming, Methods of Computer Experiment, Mathematical Modeling, Theory of Information, Database Management Systems \newline{}%
     \textbf{Qualification:} Physicist-Engineer
 }%
 
-%   Languages
+%  Languages
 \section{Languages}
 \cvlanguage{Russian}{Fluent}{My native language}
 \cvlanguage{English}{Intermediate}{Speaking, reading and writing}
 
-%   Expireance
+%  Expireance
 \section{Experience}
 %\subsection{Vocational}
 \cventry{2010 -- Present}{Freelancer}{Web Development}{Minsk}{}{}
 %\subsection{Miscellaneous}
 \cventry{2009 -- Present}{Laboratory Assistant}{Institute of Applied Physics Problems of the BSU}{Minsk}{}{I am working on a programme package that model the processes of producing integrated chips}
 
-%   Computer skills
+%  Computer skills
 \section{Computer skills}
 \cvcomputer{OS}{Linux/Unix, MacOS, Windows}{Web}{HTML/XHTML, CSS, JavaScript}
 \cvcomputer{Programming}{Ruby, C++, Python, PHP}{Data Bases}{MySQL, PostgreSQL, SQLite}
-%\cvcomputer{Scientific}{MATLAB, Octave, Mathematica}{Typography}{\TeX{}, \LaTeX{}}
 
-%   Ruby on Rails
+%  Ruby on Rails
 \section{Ruby on Rails}
 \cvline{Have Experiance}{\small RVM, Gems, Bundler, rake, git, github, TDD, RSpec, Cucumber, Test::Unit, Agile Web Development, Nginx, Unicorn, Heroku, REST, Ajax, JSON, bash, Linux command line, Regular Expressions, jQuery, CoffeScript, Haml, sascc/scss, YAML, markdown, vim}
 
-%   Updated
+%  Updated
 \section{Updated}
-\cvline{Date}{\small June 7, 2012}
+\cvline{Date}{\small August 13, 2012}
 
 \end{document}
+
+%% END
