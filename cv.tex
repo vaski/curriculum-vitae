@@ -1,53 +1,58 @@
-%% start of file `cv.tex'.
-%% Maintainer: Vadim Masakovski 
+%% start of file `cv.tex'
+%% Maintainer: Vadim Masakovski
 %
-%  https://launchpad.net/moderncv/  
+%% Copyright 2006-2012 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
 
-\documentclass[10pt,a4paper]{moderncv}
+\documentclass[11pt,a4paper,sans]{moderncv}   % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
 % moderncv themes
-\moderncvtheme[green]{casual}  % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
-%\moderncvtheme[green]{classic}  % idem
+\moderncvstyle{casual}                        % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{green}                         % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}    % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
 
 % character encoding
-\usepackage[utf8]{inputenc}  % replace by the encoding you are using
+\usepackage[utf8]{inputenc}                   % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                         % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
 
 % adjust the page margins
-\usepackage[scale=0.9]{geometry}
-\setlength{\hintscolumnwidth}{2.5cm}  % if you want to change the width of the column with the dates
-%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
-\AtBeginDocument{\recomputelengths}  % required when changes are made to page layout lengths
+\usepackage[scale=0.85]{geometry}
+\setlength{\hintscolumnwidth}{2.5cm}          % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}      % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
 % personal data
 \firstname{Vadim}
 \familyname{Masakovski}
-%\title{Vadim Masakovski}  % optional, remove the line if not wanted
-%\address{street and number}{postcode city}  % optional, remove the line if not wanted
-%\mobile{mobile (optional)}  % optional, remove the line if not wanted
-\phone{phone: +375298558472}  % optional, remove the line if not wanted
-%\fax{fax (optional)}  % optional, remove the line if not wanted
-\email{email: VadimMasakovski@gmail.com}  % optional, remove the line if not wanted
-%\homepage{homepage (optional)}  % optional, remove the line if not wanted
-%\extrainfo{additional information (optional)}  % optional, remove the line if not wanted
-\photo[48pt]{photo}  % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
-\quote{"When you are young you think money is the most important thing in life. When you are old, you know it." – Oscar Wilde.}  % optional, remove the line if not wanted
+\title{Junior Ruby on Rails Developer}         % optional, remove the line if not wanted
+%\address{street and number}{postcode city}    % optional, remove the line if not wanted
+\mobile{phone: +375298558472}                  % optional, remove the line if not wanted
+%\phone{+2~(345)~678~901}                      % optional, remove the line if not wanted
+%\fax{+3~(456)~789~012}                        % optional, remove the line if not wanted
+\email{email: VadimMasakovski@gmail.com}       % optional, remove the line if not wanted
+\homepage{https://github.com/masakovski}       % optional, remove the line if not wanted
+%\extrainfo{additional information}            % optional, remove the line if not wanted
+\photo[48pt][0.2pt]{photo}                     % '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file; optional, remove the line if not wanted
+%\quote{When you are young you think money is the most important thing in life. When you are old, you know it. – Oscar Wilde.}   % optional, remove the line if not wanted
 
-% to show numerical labels in the bibliography; only useful if you make citations in your resume
-\makeatletter
-\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
-\makeatother
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
 
 % bibliography with mutiple entries
 %\usepackage{multibib}
 %\newcites{book,misc}{{Books},{Others}}
 
-%\nopagenumbers{}  % uncomment to suppress automatic page numbering for CVs longer than one page
 
 %% CONTENT
 
 \begin{document}
 \maketitle
-%  Personal Information 
+%  Personal Information
 \section{Personal Information}
 \cvline{Father's Name}{Michael}
 \cvline{Date of Birth}{May 9, 1988}
@@ -57,7 +62,7 @@
 
 %  Education
 \section{Education}
-\cventry{2005 -- 2010}{Belarusian State University,}{Faculty of Radio Physics and Electronics}{}{}{
+\cventry{2005 -- 2010}{Belarusian State University}{Faculty of Radio Physics and Electronics}{}{}{
     \textbf{Department:} Physical Electronics \newline{}%
     \textbf{Specialization:} Digital Electronics \newline{}%
     \textbf{Additional courses:} Theory of Programming, Object-Oriented Programming, Methods of Computer Experiment, Mathematical Modeling, Theory of Information, Database Management Systems \newline{}%
@@ -74,7 +79,8 @@
 %\subsection{Vocational}
 \cventry{2010 -- Present}{Freelancer}{Web Development}{Minsk}{}{}
 %\subsection{Miscellaneous}
-\cventry{2009 -- Present}{Laboratory Assistant}{Institute of Applied Physics Problems of the BSU}{Minsk}{}{I am working on a programme package that model the processes of producing integrated chips}
+\cventry{2010 -- 2012}{Engineer}{JSC "INTEGRAL"}{Minsk}{}{Worked two years as an engineer after university graduating}
+\cventry{2009 -- 2010}{Laboratory Assistant}{Institute of Applied Physics Problems of the BSU}{Minsk}{}{I am working on a programme package that model the processes of producing integrated chips}
 
 %  Computer skills
 \section{Computer skills}
@@ -82,12 +88,15 @@
 \cvcomputer{Programming}{Ruby, C++, Python, PHP}{Data Bases}{MySQL, PostgreSQL, SQLite}
 
 %  Ruby on Rails
-\section{Ruby on Rails}
-\cvline{Have Experiance}{\small RVM, Gems, Bundler, rake, git, github, TDD, RSpec, Cucumber, Test::Unit, Agile Web Development, Nginx, Unicorn, Heroku, REST, Ajax, JSON, bash, Linux command line, Regular Expressions, jQuery, CoffeScript, Haml, sascc/scss, YAML, markdown, vim}
+\section{Ruby/RoR skills}
+\cvline{}{bash/zsh, vim, RVM, irb, Regular Expressions, git, github, heroku}
+\cvline{Ruby on Rails}{Bundler, rake, rails console, JSON, CoffeScript, sacss/scss, haml, YAML, rdoc, markdown}
+\cvitem{TDD/BDD}{RSpec, Cucumber, Test::Unit, shoulda, factory girl}
+\cvitem{Gems}{devise, cancan, state machine, ransack, simple form, will paginate, faker, annotate}
 
 %  Updated
 \section{Updated}
-\cvline{Date}{\small August 13, 2012}
+\cvline{Date}{\small September 23, 2012}
 
 \end{document}
 
