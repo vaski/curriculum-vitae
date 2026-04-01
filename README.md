@@ -1,34 +1,12 @@
-## curriculum vitae
+## Curriculum Vitae
 
-This is my curriculum vitae. To create a cv, I used LaTeX and class moderncv.
+My curriculum vitae built with LaTeX and [moderncv](https://github.com/moderncv/moderncv).
 
-###A modern curriculum vitae class for LaTeX
+### Build
 
-Moderncv: a modern curriculum vitae class for LaTeX
+```bash
+docker build -t cv-builder .
+docker run --rm -v "$PWD":/doc cv-builder
+```
 
-Moderncv provides a LaTeX documentclass for typesetting modern curriculum vitaes in various styles. It is fairly customizable, allowing you to define your own style by changing the colors, the fonts, ... and provides two default styles: classic and casual.
-
-The moderncv documentclass need it's input to be formatted with regular commands like:
-  
-  \section,
-  
-  \subsection,
-
-  \maketitle,
-  
-but also defines its own special commands:
-
-  \cventry,
-  
-  \firstname,
-
-  \familyname,
-  
-  ...
-  
-Most commands are defined in such a way that the arguments are optional.
-
-Documents can be compiled into dvi, ps or pdf.
-
-[moderncv](https://launchpad.net/moderncv)
-[TeX Live](http://www.tug.org/texlive/)
+This compiles `template.tex` and produces `Vadim Masakovski - CV.pdf` in the project directory.
